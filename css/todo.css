@@ -1,0 +1,120 @@
+.todo {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+  justify-content: space-between;
+}
+
+.todo__header__btn {
+  font-size: var(--menu__header__btn);
+  width: var(--menu-header-btn);
+  height: var(--menu-header-btn);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: var(--border);
+  color: var(--white-color);
+}
+
+.todo__header:hover .todo__header__btn {
+  background-color: white;
+  color: var(--player-color);
+  transform: rotate(0);
+}
+
+.todo__form {
+  width: 10vm;
+  margin: 0 1em;
+  border: var(--border);
+  border-radius: 0.75em;
+  padding: 0.3em;
+  display: flex;
+  justify-content: center;
+}
+
+.todo__form:focus-within,
+.todo:hover .todo__form {
+}
+
+.todo__input {
+  width: 10vw;
+  color: var(--white-color);
+  text-align: center;
+  font-size: var(--todo-input-font);
+  background-color: transparent;
+  border: none;
+}
+
+.todo__input::placeholder {
+  text-align: center;
+  color: var(--white-color);
+  font-size: var(--todo-placeholder);
+}
+
+.todo__list__container {
+  padding: 1.5%;
+  text-align: center;
+  border: var(--border);
+  height: var(--todo-list-contanier-height);
+  width: 15vw;
+  border-radius: 0.75em;
+  background-color: var(--menu-header-color);
+  margin-bottom: 1em;
+  opacity: 1;
+  transition: all 200ms ease;
+}
+
+.todo:hover .todo__list__container {
+  color: red;
+}
+
+.todo__list__header {
+  font-size: var(--player-color);
+  color: var(--white-color);
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+.todo__item {
+  display: flex;
+  align-items: center;
+}
+
+.todo__text {
+  width: 50%;
+  color: var(--white-color);
+  font-size: var(--todo-text);
+}
+
+.todo__list__btn {
+  color: var(--white-color);
+  font-size: var(--list-text-size);
+  will-change: transform;
+}
+
+.todo__btns {
+  width: 50%;
+}
+
+.todo__del__btn {
+  font-size: var(--todo-del);
+}
+
+.todo__container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+}

@@ -1,0 +1,121 @@
+.main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu {
+  position: -webkit-sticky;
+  position: sticky;
+  align-self: flex-start;
+  top: 15%;
+  left: 5%;
+  width: 20%;
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__header {
+  width: 70%;
+  padding: 0.75em;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.menu__header__btn {
+  text-align: center;
+  width: var(--menu-header-btn);
+  height: var(--menu-header-btn);
+  font-size: var(--menu-header-icon);
+  padding: 0;
+  cursor: pointer;
+  will-change: transform;
+  border-radius: 50%;
+  border: var(--border);
+  background-color: transparent;
+  margin-right: 0.5em;
+  /*transform: rotate(90deg);
+  transition: all 0.3s ease;*/
+  color: var(--white-color);
+}
+
+.menu__header__text {
+  color: var(--white-color);
+  font-size: var(--menu-header-text);
+  transition: all 0.3s ease;
+  background-color: transparent;
+  border: none;
+}
+
+.menu__header__btn:hover {
+  background-color: var(--white-color);
+  color: var(--player-color);
+}
+
+.menu__content {
+  display: flex;
+}
+
+.menu__vertical {
+  width: 1px;
+  height: 100%;
+  background-color: var(--white-color);
+  margin-left: 1.6em;
+}
+
+.menu__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: var(--white-color);
+}
+
+.menu__item {
+  list-style: none;
+}
+
+.menu__title,
+.menu__item {
+  width: 50%;
+  padding: 0.75em;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu__title:hover,
+.menu__item:hover {
+  background-color: var(--menu-color);
+}
+
+.menu__title__btn {
+  color: var(--white-color);
+  font-size: var(--menu__title-btn);
+  background-color: transparent;
+  border: none;
+}
+
+.menu__item__btn {
+  color: var(--white-color);
+  font-size: var(--menu-item-btn);
+  text-align: center;
+  background-color: transparent;
+  border: none;
+}
+
+.menu-todo {
+  display: none;
+}
+
+.menu__vertical,
+.menu-home,
+.menu-todo,
+.menu-movie,
+.menu-scene,
+.menu-illust {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}

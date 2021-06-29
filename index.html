@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Time</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="http://kit.fontawesome.com/6478f529f2.js"crossorigin="anonymous"></script>
+    <script src = "src/bg.js" defer></script> 
+    <script src = "src/time.js" defer></script>
+    <script src = "src/todo.js" defer></script>
      
   </head>
 
@@ -29,9 +33,81 @@
         </section>
       </div>
     </header>
+
+    <main class = "main">
+
+      <!--  메뉴   -->
+      <section class = "menu">
+        <header class = "menu__header">
+          <button class = "menu__header__btn" data-key="header-icon" data-value="scroll"><i class="fas fa-bars" data-key="header-icon" data-value="scroll" ></i></button>
+          <button class = "menu__header__text" data-key="header-text" data-value="scroll">Menu</button>
+        </header>
+        <div class = "menu__content">
+          <div class = "menu__vertical"></div>
+            <ul class = "menu__list">
+              <div class="menu__title menu-home"><button class = "menu__title__btn" data-value="Home">Home</button></div>
+              <li class="menu__item menu-todo"><button class="menu__item__btn" data-value="Todo">Todo</button></li>
+              <div class="menu__title menu-movie"><button class = "menu__title__btn" data-value="Movie">Movie</button></div>
+              <li class="menu__item menu-scene"><button class="menu__item__btn" data-value="Scene">Scene</button></li>
+              <li class="menu__item menu-illust"><button class="menu__item__btn" data-value="Illust">Illust</button></li>
+            </ul>
+        </div>
+      </section>
+
+      <!--  과제 리스트   -->
+    
+      <section class = "todo">
+        <header class = "todo__header">
+          <button class = "todo__header__btn pending__btn"><i class = "fas fa-list-ul"></i></button>
+          <form class="todo__form">
+            <input type="text" class = "todo__input" placeholder="Todays To-Do">
+          </form>
+          <button class = "todo__header__btn finished__btn"><i class = "far fa-thumbs-up"></i></button>
+        </header>
+
+        <div class = "todo__container">
+          <div class = "todo__list__container pending__container">
+            <header class = "todo__list__header">Pending</header>
+            <ul class = "todo__list pending__list"></ul>
+          </div>
+          <div class = "todo__list__container finished__container">
+            <header class = "todo__list__header">Finished</header>
+            <ul class = "todo__list finished__list"></ul>
+          </div>
+        </div>
+      </section>
+
+      <!--  movie  -->
+      <span class = "title">About Time</span>
+
+      <section class = "movie">
+        <header class = "movie__header">
+          <i class = "fas fa-film movie__header__icon"></i>
+          <span class = "movie__header__text">Movie</span>
+        </header>
+
+        <section class = "movie__scene">
+          <header class = "scene__header">Scene</header>
+          <div class = "scene__content">
+            <button class = "scene__slider__btn scene__left__btn">
+              <i class = "fas fa-arrow-left" data-id = "left__btn"></i>
+            </button>
+            <div class = "scene__wrapper">
+               
+                  <div class = "scene__photo"><img class = "photo"src="img/pic1.jpg" alt=""></div>
+                  <div class="scene__photo"><img src="img/pic2.jpg" alt="" class="photo"></div>
+                  <div class="scene__photo"><img src="img/pic3.jpg" alt="" class="photo"></div>
+                 
+            </div>
+            <button class = "scene__slider__btn scene__right__btn">
+              <i class = "fas fa-arrow-right" data-id = "right__btn"></i>
+            </button>
+          </div>
+        </section>
+      </section>
+    </main>
      
-    <script src="http://kit.fontawesome.com/6478f529f2.js"crossorigin="anonymous"></script>
-    <script src = "src/time.js"></script>
+
 
   </body>
 </html>

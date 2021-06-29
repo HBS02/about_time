@@ -1,5 +1,9 @@
 @import "header.css";
 @import "variable.css";
+@import "menu.css";
+@import "todo.css";
+@import "movie.css";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
 
 body {
   margin: 0;
@@ -9,6 +13,32 @@ body {
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
-  background: url("../img/back.jpg") center/cover no-repeat;
+  /*background: url("../img/main.jpg") center/cover no-repeat;
   background-attachment: fixed; /* 백그라운드 이미지 스크롤 여부. */
+}
+
+.bgImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.title {
+  top: 8%;
+  position: absolute;
+  align-self: center; /* 세로축 */
+  color: var(--white-color);
+  text-transform: uppercase; /* 대문자 또는 소문자로 바꿈 uppercase - > 모두 대문자로.   */
+  font-size: 4.5em;
+  margin: 0;
+  font-weight: 500;
+  font-family: "Nanum Gothic", sans-serif;
 }

@@ -37,7 +37,7 @@
 }
 
 .music {
-  margin: 0.5em;
+  margin-right: 0.5em;
   height: 80%;
   width: 60%;
   display: flex;
@@ -50,14 +50,15 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
-  columns: var(--white-color);
+  align-content: center;
+  color: var(--white-color);
   font-size: var(--header-music-size);
   padding: 0.1em;
   border-radius: 1em;
   border: 2px solid transparent;
   transition: all 0.3s ease;
-  border: var(border);
+  border: var(--border);
+  margin-bottom: 5px;
 }
 
 .music:hover .music__title {
@@ -83,6 +84,7 @@
 .music__btn {
   color: var(--white-color);
   border: var(--border);
+  background-color: transparent;
   font-size: var(--music-btn-icon);
   padding: 0.1em;
   width: var(--music-btn-size);

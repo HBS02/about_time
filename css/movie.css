@@ -1,0 +1,111 @@
+.movie {
+  position: absolute;
+  top: 45%;
+  left: 14%;
+  padding: 2%;
+  width: 88%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie__header__icon {
+  font-size: 3em;
+  padding: 0.3em;
+  border-radius: 50%;
+  color: white;
+}
+
+.movie__header__text {
+  font-size: 3em;
+  color: white;
+}
+
+.movie__scene,
+.movie__illust {
+  display: flex;
+  flex-direction: column;
+
+  align-self: center;
+  padding: 15px;
+  height: 20%;
+  width: 100%;
+  margin-bottom: 50vh;
+}
+
+.scene__header,
+.illust__header {
+  font-size: var(--movie-content-header);
+  color: var(--white-color);
+  margin: 0.5em;
+}
+
+.scene__content,
+.illust__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 94%;
+
+  margin-bottom: 0.75em;
+}
+
+.scene__wrapper,
+.illust__wrapper {
+  position: relative;
+  top: -60px;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+}
+
+.scene__slider,
+.illust__slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: blue;
+  transition: transform 0.3s ease-in-out;
+}
+
+.scene__slider__item,
+.illust__slider__item {
+  cursor: pointer;
+}
+
+.scene__photo,
+.illust__photo {
+  display: inline-block;
+  width: var(--photo-width);
+  height: var(--photo-height);
+  border: var(--photo-border) transparent;
+  border-radius: 1.7em;
+  transition: all 0.3s ease;
+}
+
+.scene__photo:hover,
+.illust__photo:hover {
+  border: var(--photo-border) var(--white-color);
+  cursor: pointer;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5em;
+}
+
+.scene__slider__btn,
+.illust__slider__btn {
+  position: relative;
+  top: -60px;
+  font-size: 1.5em;
+  color: var(--white-color);
+  border: transparent;
+}
