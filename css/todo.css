@@ -43,10 +43,6 @@
   justify-content: center;
 }
 
-.todo__form:focus-within,
-.todo:hover .todo__form {
-}
-
 .todo__input {
   width: 10vw;
   color: var(--white-color);
@@ -71,7 +67,7 @@
   border-radius: 0.75em;
   background-color: var(--menu-header-color);
   margin-bottom: 1em;
-  opacity: 1;
+  opacity: 0;
   transition: all 200ms ease;
 }
 
@@ -117,4 +113,8 @@
   flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
+}
+
+button {
+  border: transparent;
 }

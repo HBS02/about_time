@@ -10,6 +10,7 @@
     <script src = "src/bg.js" defer></script> 
     <script src = "src/time.js" defer></script>
     <script src = "src/todo.js" defer></script>
+    <script src = "src/menu.js" defer></script>
      
   </head>
 
@@ -37,23 +38,21 @@
     <main class = "main">
 
       <!--  메뉴   -->
-      <section class = "menu">
-        <header class = "menu__header">
-          <button class = "menu__header__btn" data-key="header-icon" data-value="scroll"><i class="fas fa-bars" data-key="header-icon" data-value="scroll" ></i></button>
-          <button class = "menu__header__text" data-key="header-text" data-value="scroll">Menu</button>
-        </header>
-        <div class = "menu__content">
-          <div class = "menu__vertical"></div>
-            <ul class = "menu__list">
-              <div class="menu__title menu-home"><button class = "menu__title__btn" data-value="Home">Home</button></div>
-              <li class="menu__item menu-todo"><button class="menu__item__btn" data-value="Todo">Todo</button></li>
-              <div class="menu__title menu-movie"><button class = "menu__title__btn" data-value="Movie">Movie</button></div>
-              <li class="menu__item menu-scene"><button class="menu__item__btn" data-value="Scene">Scene</button></li>
-              <li class="menu__item menu-illust"><button class="menu__item__btn" data-value="Illust">Illust</button></li>
-            </ul>
-        </div>
-      </section>
-
+        <section class="menu">
+            <header class="menu__header">
+                <button class="menu__header__btn " data-key="header-icon" data-value="scroll"><i class="fas fa-bars" data-key="header-icon" data-value="scroll" ></i></button>
+                <button class="menu__header__text " data-key="header-text" data-value="scroll">Menu</button>
+            </header>
+            <div class="menu__content">
+                <div class="menu__vertical"></div>
+                <ul class="menu__list">
+                    <div class="menu__title menu-home"><button class="menu__title__btn" data-value="Home">Home</button></div>
+                    <div class="menu__title menu-movie"><button class="menu__title__btn" data-value="Movie">Movie</button></div>
+                    <li class="menu__item menu-scene"><button class="menu__item__btn" data-value="Scene">Scene</button></li>
+                    <li class="menu__item menu-illust"><button class="menu__item__btn" data-value="Illust">Illust</button></li>
+                </ul>
+            </div>
+        </section>
       <!--  과제 리스트   -->
     
       <section class = "todo">
