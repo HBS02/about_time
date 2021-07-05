@@ -30,6 +30,7 @@
 }
 
 .music-container {
+  margin-top: 80px;
   width: 33%;
   display: flex;
   justify-content: flex-end;

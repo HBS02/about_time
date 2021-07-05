@@ -1,6 +1,6 @@
 .todo {
   position: absolute;
-  top: 0;
+  top: 30px;
   right: 5%;
   height: 100%;
   display: flex;
