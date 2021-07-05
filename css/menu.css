@@ -48,7 +48,7 @@
   transition: all 0.3s ease;
 }
 
-.menu:hover .menu__header__btn {
+.menu__header__btn:hover {
   transform: rotate(0);
   background-color: var(--white-color);
   color: var(--player-color);

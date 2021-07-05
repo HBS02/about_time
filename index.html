@@ -11,6 +11,8 @@
     <script src = "src/time.js" defer></script>
     <script src = "src/todo.js" defer></script>
     <script src = "src/menu.js" defer></script>
+    <script src = "src/movie.js" defer></script>
+    <script src = "src/music.js" defer></script>
      
   </head>
 
@@ -92,11 +94,18 @@
               <i class = "fas fa-arrow-left" data-id = "left__btn"></i>
             </button>
             <div class = "scene__wrapper">
-               
-                  <div class = "scene__photo"><img class = "photo"src="img/pic1.jpg" alt=""></div>
+                <ul class="scene__slider">
+                  <li class="scene__slider__item">
+                  <div class="scene__photo"><img class = "photo"src="img/pic1.jpg" alt=""></div>
                   <div class="scene__photo"><img src="img/pic2.jpg" alt="" class="photo"></div>
-                  <div class="scene__photo"><img src="img/pic3.jpg" alt="" class="photo"></div>
-                 
+                  <div class="scene__photo"><img src="img/pic6.jpg" alt="" class="photo"></div>
+                 </li>
+                       <li class="scene__slider__item">
+                  <div class="scene__photo"><img class = "photo"src="img/pic3.jpg" alt=""></div>
+                  <div class="scene__photo"><img src="img/pic5.jpg" alt="" class="photo"></div>
+                  <div class="scene__photo"><img src="img/pic4.jpg" alt="" class="photo"></div>
+                 </li>
+                 </ul>
             </div>
             <button class = "scene__slider__btn scene__right__btn">
               <i class = "fas fa-arrow-right" data-id = "right__btn"></i>

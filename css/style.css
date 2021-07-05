@@ -5,6 +5,10 @@
 @import "movie.css";
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   width: 100%;
@@ -15,6 +19,10 @@ body {
   overflow-x: hidden;
   /*background: url("../img/main.jpg") center/cover no-repeat;
   background-attachment: fixed; /* 백그라운드 이미지 스크롤 여부. */
+}
+ul,
+input {
+  all: unset;
 }
 
 .bgImage {
@@ -29,6 +37,7 @@ body {
 button {
   background-color: transparent;
   cursor: pointer;
+  border: none;
 }
 
 .title {
