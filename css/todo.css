@@ -71,10 +71,6 @@
   transition: all 200ms ease;
 }
 
-.todo:hover .todo__list__container {
-  color: red;
-}
-
 .todo__list__header {
   font-size: var(--player-color);
   color: var(--white-color);
