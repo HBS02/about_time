@@ -1,8 +1,8 @@
-@import "header.css";
-@import "variable.css";
-@import "menu.css";
-@import "todo.css";
-@import "movie.css";
+@import "./header.css";
+@import "./variable.css";
+@import "./menu.css";
+@import "./todo.css";
+@import "./movie.css";
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
 
 * {
