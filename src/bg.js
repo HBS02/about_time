@@ -7,7 +7,7 @@ function handleload(image) {
 
 function paintImage() {
   const image = new Image();
-  image.src = `../img/main.jpg`;
+  image.src = `./img/main.jpg`;
   image.addEventListener("load", handleload(image));
 }
 
